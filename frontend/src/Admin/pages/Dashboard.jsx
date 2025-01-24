@@ -1,16 +1,19 @@
 import React from "react";
-import DashboardCard from "../components/DashboardCard";
+// import DashboardCard from "../components/DashboardCard";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <div className="d-flex justify-content-around flex-wrap">
-        <DashboardCard title="Total Events" value="12" />
-        <DashboardCard title="Total Participants" value="340" />
-        <DashboardCard title="Registrations Today" value="45" />
-      </div>
-    </div>
+    <div style={{ width: '100%', height: '100vh', border: 'none' }}>
+    <iframe
+      src="/backup/index.html"
+      title="Admin Dashboard"
+      style={{
+        width: '100%',
+        height: '100%',
+        border: 'none',
+      }}
+    />
+  </div>
   );
 };
 
