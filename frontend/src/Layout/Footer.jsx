@@ -99,6 +99,15 @@ const Footer = () => {
                     Leaderboard
                   </Link>
                 </li>
+
+                <li>
+                  <Link
+                    to="/games"
+                    className="nav-link text-light text-decoration-none"
+                  >
+                    Games
+                  </Link>
+                </li>
                 <li>
                   <Link
                     to="/contact"
@@ -109,12 +118,20 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
+                    to="/register-now"
+                    className="nav-link text-light text-decoration-none"
+                  >
+                    Register
+                  </Link>
+                </li>
+                {/* <li>
+                  <Link
                     to="/login"
                     className="nav-link text-light text-decoration-none"
                   >
                     Admin Pannel
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 

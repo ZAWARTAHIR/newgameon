@@ -9,7 +9,7 @@ const teams = [
       "The Jaguars are fierce and unstoppable. They thrive under pressure and deliver extraordinary performances. Their passion and resilience are a sight to behold.",
     classes: ["BSCS-8"],
     in: ["Prof. M.Ali", "Miss Amna Awan"],
-    video: "falconstheme.mp4",
+    video: "realjaguars.mp4",
   },
   {
     name: "Warriors",
@@ -18,16 +18,16 @@ const teams = [
       "The Warriors are fearless and determined. Their powerful gameplay and strategic approach make them one of the toughest teams to beat. They inspire through their relentless pursuit of excellence.",
     classes: ["BSCS-6", "BSCS-7", "BSCS-F1"],
     in: ["Prof. Rana Hammad Habib", "Miss Hira Shahid"],
-    // video: "falconstheme.mp4",
+    video: "realwarriors.mp4",
   },
   {
     name: "Falcons",
-    logo: "/falcon.png",
+    logo: "/falcons.png",
     description:
       "The Falcons are known for their speed and agility. They dominate the field with unmatched teamwork and energy. Whether it’s a nail-biting finish or a clear victory, this team brings their A-game every time.",
     classes: ["BS English", "BS Chemistry", "BS Math"],
-    in: ["Prof. Tariq Mehmood", "Miss Aneeqa"],
-    // video: "falconstheme.mp4",
+    in: ["Miss Aneeqa"],
+    video: "Falcons.mp4",
   },
   {
     name: "Gladiators",
@@ -36,7 +36,7 @@ const teams = [
       "The Gladiators are fierce and unstoppable. They thrive under pressure and deliver extraordinary performances. Their passion and resilience are a sight to behold.",
     classes: ["BBA-7", "BBA-8", "BBA-9", "BBA F-2"],
     in: ["Prof. Kamran Khan", "Prof. Aziz"],
-    // video: "falconstheme.mp4",
+    video: "Gladiators.MP4",
   },
   {
     name: "Hawks",
@@ -71,7 +71,7 @@ const Teams = () => {
                         {team.video ? (
                           <video
                             src={team.video}
-                            width=""
+                            width="230"
                             height="400"
                             className="mt-3 rounded shadow"
                             controls

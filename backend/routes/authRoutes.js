@@ -5,29 +5,32 @@ import {
   testController,
   forgotPasswordController,
 } from "../controllers/authController.js";
-import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
+import { protect , admin } from "../middleware/authMiddleware.js";
 
 //router object
 const router = express.Router();
 
 // Public routes
-// REGISTER || POST
+// REGISTER 
 router.post("/register", registerController);
 
-// LOGIN || POST
+// LOGIN 
 router.post("/login", loginController);
 
-// Forgot Password || POST
+// Forgot Password 
 router.post("/forgot-password", forgotPasswordController);
 
-// Test route - accessible only if logged in and is admin
-router.get("/test", requireSignIn, isAdmin, testController);
+// Test 
+router.get("/test", protect,admin, testController);
 
-// Admin routes - these routes should only be accessed by admins
-router.use("/admin", requireSignIn, isAdmin); // Ensure authentication and authorization for all admin routes
+// Admin routes 
+router.use("/admin", protect, admin); 
 
 router.get("/admin/dashboard", (req, res) => {
   res.send("Admin Dashboard");
 });
+
+
+
 
 export default router;
