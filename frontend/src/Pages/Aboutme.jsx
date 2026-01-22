@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className="pictures-section">
     <h2>Meet the Team</h2>
     <div className="pictures-container">
-      {/* <div className="picture-card">
+      <div className="picture-card">
         <img 
           src="moiz.jpeg" 
           alt="Person 1" 
@@ -14,7 +14,7 @@ const AboutMe = () => {
         />
         <p className="name">Moiz</p>
         <p >BSCS-7B</p>
-      </div> */}
+      </div> 
       
       <div className="picture-card">
         <img 
